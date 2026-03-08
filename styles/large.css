@@ -1,0 +1,124 @@
+@media only screen and (min-width: 38rem) {
+
+    header, main, nav, footer {
+        max-width: 100%;
+        margin: 0 auto;
+        width: 100%;;
+    }
+
+    header {
+        grid-template-columns: 44px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: block;
+        margin: 4px;
+        max-width: 100%;
+    }
+
+    .navigation ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: black;
+    }
+
+    nav li {
+        white-space: nowrap;
+    } 
+
+    .navigation a {
+        border: none;
+    }
+
+    /*********** MAIN  ************/
+    .card{
+    display: flex;
+    gap: 2rem;
+   }
+
+   .web {
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 5px;
+   }
+
+   .me{
+    width: 100%;
+    text-align: center;
+    background-color: #d9d9d9;
+    margin-left: 10px;
+   }
+
+   .card-image{
+    width: 60%;
+    background-color: #d9d9d9;
+    margin-left: 10px;
+    text-align: center;
+
+   }
+
+   .courses-category {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 7px;
+}
+
+.category_1 {
+    border: 1px solid #ddd;
+    background-color: #d9d9d9;
+    padding: 2px 170px;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+.category_2 {
+    border: 1px solid #ddd;
+    background-color: #d9d9d9;
+    padding: 1rem 150px;
+    border-radius: 5px;
+    margin: 5px;    
+}
+.category_3 {
+    border: 1px solid #ddd;
+    background-color: #d9d9d9;
+    padding: 1rem 170px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+   .courses {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    gap: 5px;
+
+   }
+
+   .course1 {
+    border: 1px solid #ddd;
+    background-color: #d9d9d9;
+    padding: 2px 160px;
+   }
+
+    .course2 {
+    border: 1px solid #ddd;
+    background-color: #d9d9d9;
+    padding: 1rem 160px;
+   }
+
+    .course3 {
+    border: 1px solid #ddd;
+    background-color: #d9d9d9;
+    padding: 2px 160px;
+    margin: 8px;
+}
+
+
+}

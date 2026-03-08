@@ -9,34 +9,78 @@
      <link rel="stylesheet" href="styles/normalize.css">
      <link rel="stylesheet" href="styles/base.css">
      <link rel="stylesheet" href="styles/large.css">
+
+     <!-- JavaScript Here -->
+      <script src="scripts/navigation.js" defer></script> 
     
 </head>
 <body>
+
     <header>
         <img src="images/home.svg" alt="site logo" width="512" height="512">
         <span>Paul Site Title</span>
         <button id="ham-btn" class="hamburger"></button>
+
          <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="current">News & Events</a></li>
-                <li><a href="#">Dedicated Temples</a></li>
-                <li><a href="#">Announced Temples</a></li>
+                <li class="current"><a href="current">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
+        
     </header>
+
     <main>
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+
+        <section class="card">
+            <div class="me">
+                <h2 class="about">About Me</h2>
+                <p>My name is Damola. I am born in Nigeria 
+                    and I live in Nigeria. I am currently 
+                    learning web development with BYU. I love traveling and exploring new 
+                    cultures.</p>
+            </div>
+
+            <div class="card-image">
+            <h2>Student Photo</h2>
+              <img class="profile" src="images/profile1.jpg" alt="Student Profile Picture" width="200" height="200">
+            </div>
+        </section>
+
+        <section class="profile">
+        <h2 class="web">Web Certificate Courses</h2>
+
+        <div class="courses-category">
+            <p class="category_1">ALL</p>
+            <p class="category_2">CSE</p>
+            <p class="category_3">WDD</p>
+        </div>
+
+        <div class="courses">
+            <p class="course1">WDD130</p>
+            <p class="course2">WDD131</p>
+            <p class="course3">WDD231</p>
+        </div>
+        </section>
+        
     </main>
+
     <footer>
+        <h3>The total credits for course listed above is 6</h3>
         <div class="social">
             <a href="" target="_blank"><img src="images/github.svg" alt="Github" height="16" width="16"></a>
             <a href="" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" height="16" width="16"></a>
             <a href="" target="_blank"><img src="images/facebook (1).svg" alt="Facebook" height="16" width="16"></a>
             <a href="" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" height="16" width="16"></a>
         </div>
-        <p>copyright symbol and current year</p>
-        <p>Last Modified</p>
+
+        <div class="copyright">
+            <p> &copy; <span id="year"></span> Olalekan Damola🌍 Utah, USA</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+
     </footer>
-    <script src="scripts/navigation.js"></script> 
 </body>
 </html>
