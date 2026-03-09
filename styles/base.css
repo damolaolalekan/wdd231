@@ -163,20 +163,12 @@ h1 {
   }
 
 
-/*********** NAVIGATION ************/
-.navigation {
-    display: none;;
-}
-.navigation.show{
-    display: block;
-}
-
 /*********** footer  ************/
 footer {
-    background-color: #eee;
+    background-color: #d9d9d9;
     padding: 1rem 10px;
     text-align: center;
-    background-color: #d9d9d9;
+    
 }
 
 .social {
