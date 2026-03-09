@@ -162,6 +162,12 @@ h1 {
     margin: 5px 5px;
   }
 
+  .credits {
+    background-color: white;
+    color: #000;
+    
+   }
+
 
 /*********** footer  ************/
 footer {
