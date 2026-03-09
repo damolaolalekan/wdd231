@@ -114,59 +114,43 @@ h1 {
     margin-bottom: 5px;
 }
 
-.category_1 {
+.courses-category button {
     border: 1px solid #ddd;
     background-color: #d9d9d9;
-    padding: 1rem 52px;
+    padding: 10px 30px;
     border-radius: 5px;
-    margin: 5px;
+    cursor: pointer;
+}
 
+.courses-category button:hover {
+    background-color: #E07A5F;
 }
-.category_2 {
-    border: 1px solid #ddd;
-    background-color: #d9d9d9;
-    padding: 1rem 52px;
-    border-radius: 5px;
-    margin: 5px;    
-}
-.category_3 {
-    border: 1px solid #ddd;
-    background-color: #d9d9d9;
-    padding: 1rem 52px;
-    border-radius: 5px;
-    margin: 5px;
-}
+
 
    main .courses {
     text-align: center;
    }
-
-   .course1 {
-    border: 1px solid #ddd;
-    background-color: #d9d9d9;
-    padding: 1rem 0;
-    margin: 0 5px;
-   }
-
-    .course2 {
-    border: 1px solid #ddd;
-    background-color: #d9d9d9;
-    padding: 1rem 0;
-    margin: 5px;
-   }
-
-    .course3 {
-    border: 1px solid #ddd;
-    background-color: #d9d9d9;
-    padding: 1rem 0;
-    margin: 5px 5px;
-  }
 
   .credits {
     background-color: white;
     color: #000;
     
    }
+
+   #courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#courses div {
+    border: 1px solid #ddd;
+    background-color: #d9d9d9;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
 
 /*********** footer  ************/

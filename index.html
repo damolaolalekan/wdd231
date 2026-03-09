@@ -14,10 +14,11 @@
 
     <!-- Style Sheets Here -->
      <link rel="stylesheet" href="styles/normalize.css">
-     <link rel="stylesheet" href="styles/base.css">
-     <link rel="stylesheet" href="styles/large.css">
+     <link rel="stylesheet" href="styles/small.css">
+     <link rel="stylesheet" href="styles/larger.css">
 
      <!-- JavaScript Here -->
+      <script src="scripts/course.js" defer></script>
       <script src="scripts/navigation.js" defer></script> 
     
 </head>
@@ -25,7 +26,7 @@
 
     <header>
         <img src="images/home.svg" alt="site logo" width="512" height="512">
-        <span>Paul Site Title</span>
+        <span>Olalekan Damola</span>
         <button id="ham-btn" class="hamburger"></button>
 
          <nav id="nav-bar" class="navigation">
@@ -33,9 +34,6 @@
                 <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="#">Chamber Project</a></li>
                 <li><a href="#">Final Project</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Contact</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -64,15 +62,15 @@
         <h2 class="web">Web Certificate Courses</h2>
 
         <div class="courses-category">
-            <p class="category_1">ALL</p>
-            <p class="category_2">CSE</p>
-            <p class="category_3">WDD</p>
+            <button id="all">ALL</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
         </div>
 
-        <div class="courses">
-            <p class="course1">WDD130</p>
-            <p class="course2">WDD131</p>
-            <p class="course3">WDD231</p>
+        <div id="courses"></div>
+
+        <h3>Total Credits: <span id="totalCredits"></span></h3>
+ 
         </div>
         </section>
 
@@ -89,11 +87,16 @@
     </main>
 
     <footer>
-        <div class="copyright">
-            <p> &copy; <span id="year"></span> Olalekan Damola🌍 Utah, USA</p>
-            <p>Last Modification: <span id="lastModified"></span></p>
-        </div>
+        <div class="social">
+<a href="https://github.com/YOURUSERNAME"><img src="images/github.svg" alt="Github"></a>
+<a href="https://linkedin.com/in/YOURPROFILE"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+<a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+<a href="#"><img src="images/twitter-x.svg" alt="Twitter"></a>
+</div>
 
+<p>© <span id="year"></span> Olalekan Damola 🌍 Nigeria</p>
+
+<p id="lastModified"></p>
     </footer>
 </body>
 </html>
