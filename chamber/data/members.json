@@ -1,0 +1,64 @@
+[
+{
+"name":"Osun Tech Hub",
+"address":"12 Innovation Street, Osogbo",
+"phone":"+234800111111",
+"website":"https://example.com",
+"image":"images/business_1.png",
+"membership":3
+},
+
+{
+"name":"Modakeke Farmers Cooperative",
+"address":"45 Agriculture Road",
+"phone":"+234800222222",
+"website":"https://example.com",
+"image":"images/business_2.png",
+"membership":2
+},
+
+{
+"name":"Osun Creative Arts",
+"address":"10 Culture Avenue",
+"phone":"+234800333333",
+"website":"https://example.com",
+"image":"images/business_3.png",
+"membership":1
+},
+
+{
+"name":"Ife Digital Solutions",
+"address":"8 Tech Street",
+"phone":"+234800444444",
+"website":"https://example.com",
+"image":"images/business_4.png",
+"membership":3
+},
+
+{
+"name":"Osogbo Market Traders",
+"address":"Market Square",
+"phone":"+234800555555",
+"website":"https://example.com",
+"image":"images/business_5.png",
+"membership":2
+},
+
+{
+"name":"Sunrise Logistics",
+"address":"Transport Avenue",
+"phone":"+234800666666",
+"website":"https://example.com",
+"image":"images/business_6.png",
+"membership":1
+},
+
+{
+"name":"Green Farms Nigeria",
+"address":"Farm Estate Road",
+"phone":"+234800777777",
+"website":"https://example.com",
+"image":"images/business_7.png",
+"membership":2
+}
+]

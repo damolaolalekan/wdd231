@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Business Directory | Osun Chamber</title>
+
+<meta name="description" content="Directory of businesses connected to the Osun State Chamber of Commerce.">
+<meta name="author" content="Olalekan Damola">
+
+<link rel="icon" href="images/logo.svg">
+
+<meta property="og:title" content="Osun Chamber Directory">
+<meta property="og:description" content="Explore member businesses in the Osun Chamber of Commerce.">
+<meta property="og:image" content="images/biz1.webp">
+<meta property="og:url" content="https://damolaolalekan.github.io/wdd231/chamber/directory.html">
+
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<script src="scripts/directory.js" defer></script>
+<script src="scripts/navigation.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+<img src="images/logo.png" alt="chamber logo" width="60">
+<h1>Osun Chamber of Commerce</h1>
+
+<button id="ham-btn" class="hamburger">☰</button>
+
+<nav id="nav-bar" class="navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="discover.html">Discover</a></li>
+<li><a href="directory.html">Directory</a></li>
+<li><a href="join.html">Join</a></li>
+</ul>
+</nav>
+</header>
+
+
+<main>
+
+<h2>Member Directory</h2>
+
+<div class="view-buttons">
+<button id="gridBtn">Grid</button>
+<button id="listBtn">List</button>
+</div>
+
+<section id="members" class="grid"></section>
+
+<!-- ⭐ NEW SPOTLIGHT SECTION -->
+<h2>🌟 Featured Members</h2>
+<section id="spotlights" class="grid"></section>
+
+</main>
+
+
+<footer>
+
+<p>Osun Chamber of Commerce</p>
+<p>Email: info@osunchamber.org</p>
+<p>Phone: +234 800 000 000</p>
+
+<p>© <span id="year"></span> Olalekan Damola | WDD231</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+@media only screen and (min-width: 768px) {
+body {
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+    
+    
+    header, main, nav, footer {
+        max-width: 100%;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 44px auto;
+        grid-template-rows: auto auto;
+        align-items: center;
+    }
+
+    header img {
+        grid-row: 1 / 2;
+    }
+
+    header span {
+    grid-column: 2 / 3;
+}
+
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: block;
+        margin: 4px;
+
+    }
+
+    .navigation ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    nav li {
+        white-space: nowrap;
+    } 
+
+    .navigation a {
+        border: none;
+    }
+
+    /*********** MAIN  ************/
+    .card{
+    display: flex;
+    gap: 2rem;
+   }
+
+   .web {
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 5px;
+   }
+
+   .me{
+    max-width: 100%;
+    width: 600px;
+    text-align: center;
+    background-color: #d9d9d9;
+    margin-left: 10px;
+   }
+
+   .me img {
+    width: 600px;
+    height: auto;
+   }
+
+   .card-image{
+    width: 300px;
+    background-color: #d9d9d9;
+    margin-left: 10px;
+    text-align: center;
+    
+    justify-items: center;
+
+   }
+   h3 {
+    text-align: center;
+}
+
+/********* Main **************/
+
+main img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.card-image-2 {
+    display: flex;
+}
+
+   .Events{
+    max-width: 700px;
+    width: 700px;
+    background-color: #d9d9d9;
+    margin: 10px;
+    height: 350px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: large;
+   }
+
+   .news{
+    max-width: 200px;
+    background-color: #d9d9d9;
+    margin: 10px;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: large;
+   }
+
+   .weather{
+    max-width: 300px;
+    background-color: #d9d9d9;
+    margin: 10px;
+    height: 350px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: large;
+   }
+
+   
+
+   .spotlight {
+        display: flex;
+        margin: 10px;
+
+    }
+
+    /* DIRECTORY LARGE SCREEN */
+
+.gallery{
+grid-template-columns:repeat(3,1fr);
+}
+
+.directory-tools{
+flex-direction:row;
+justify-content:center;
+}
+
+.directory-tools input{
+width:300px;
+}
+
+/********* directory **************/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.list{
+display:block;
+}
+
+.list .card{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card img{
+width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .business-card img {
+        width: 150px;
+    }
+
+
+}
