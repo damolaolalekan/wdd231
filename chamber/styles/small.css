@@ -43,25 +43,6 @@ header span {
     content: "\00D7";
 }
 
-.hamburger {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.hamburger::before {
-    content: "☰";
-}
-
-.hamburger.show::before {
-    content: "✖";
-}
-
-
-
-
-
 /*********** NAVIGATION ************/
 .navigation{
     display: none;
@@ -88,13 +69,20 @@ header span {
     background-color: #E07A5F;
 }
 
-
 h1 {
     margin: 1rem 10px;
     color: #3D405B;
 }
 
+
 /*********** MAIN  ************/
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
     section{
     display: block;
     gap: 2rem;
@@ -368,12 +356,6 @@ img {
     height: auto;
 }
 
-/* CONTAINER */
-main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
 
 /* GRID */
 .grid {
@@ -404,13 +386,6 @@ main {
 .business-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-/* IMAGE */
-.business-card img {
-    width: 120px;
-    height: auto;
-    margin-bottom: 10px;
 }
 
 /* BADGES */
