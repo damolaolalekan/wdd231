@@ -63,6 +63,7 @@ getMembers();
 // GRID / LIST
 const gridBtn = document.querySelector("#gridBtn");
 const listBtn = document.querySelector("#listBtn");
+const container = document.querySelector(".business-container");
 
 gridBtn.addEventListener("click", () => {
     membersContainer.classList.add("grid");
