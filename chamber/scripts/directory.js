@@ -27,8 +27,8 @@ function createCard(member) {
         <span class="badge ${level.class}">${level.name}</span>
         <img src="${member.image}" alt="${member.name}">
         <h3>${member.name}</h3>
-        <p>${member.address}</p>
-        <p>${member.phone}</p>
+        <p class="address">${member.address}</p>
+        <p class="phone">${member.phone}</p>
         <a href="${member.website}" target="_blank">Visit</a>
     `;
 

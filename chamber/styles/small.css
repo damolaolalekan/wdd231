@@ -349,12 +349,34 @@ img {
 
 .list .business-card {
     display: flex;
-    justify-content: column;
-    padding: 5px;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-left: 3rem;
+    gap: 2rem;
+    border-bottom: 1px solid #210606;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.list .business-card img {
+    display: none;
 }
 
 .list .business-card h3 {
     margin: 0;
+    font-size: 1rem;
+}
+
+.list .business-card p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.list .business-card a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* CARD STYLE */
