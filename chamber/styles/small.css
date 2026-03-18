@@ -285,11 +285,6 @@ gap:20px;
 padding:20px;
 }
 
-.business-card:hover{
-transform:translateY(-5px);
-box-shadow:0 8px 20px rgba(0,0,0,0.15);
-}
-
 .business-card h3{
 margin-bottom:5px;
 }
@@ -320,16 +315,6 @@ text-align:left;
 
 
 /******** directory  ************/
-
-.view-buttons{
-margin-bottom:20px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:1fr;
-gap:20px;
-}
 
 .business-card img{
 width:100%;
@@ -370,8 +355,9 @@ img {
 /* HOVER EFFECT */
 .business-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
+
 
 /* BADGES */
 .badge {
