@@ -428,3 +428,14 @@ img {
     background: #555;
 }
 
+.me img,
+.card-image,
+.Events,
+.weather,
+.business,
+.card {
+    width: 100%;
+    max-width: 100%;
+}
+
+
