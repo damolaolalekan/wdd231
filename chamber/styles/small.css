@@ -401,14 +401,26 @@ img {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 20px;
-    color: white;
+    background-color: #6c757d;
+    color: #ffffff; 
     font-size: 12px;
     margin-bottom: 10px;
 }
 
-.gold { background: gold; color: black; }
-.silver { background: silver; }
-.member { background: #E8E8E8; }
+.gold { 
+    background: gold;
+     color: black; 
+    }
+
+.silver { 
+    background-color: #6c757d; 
+    color: #ffffff;  
+}
+
+.member { 
+    background: #E8E8E8;
+     color: #333; 
+    }
 
 /* BUTTONS */
 .view-buttons {
