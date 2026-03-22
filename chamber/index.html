@@ -28,6 +28,7 @@
      <!-- JavaScript Here -->
       <script src="scripts/course.js" defer></script>
       <script src="scripts/navigation.js" defer></script> 
+      <script src="scripts/weather.js" defer></script>
 
       <link rel="icon" href="favicon.ico">
       <link rel="icon" type="image/png" href="favicon.png">
@@ -50,63 +51,48 @@
     </header>
     <main>
 
-    <section class="card">
-        <div class="me">
-            <h2 class="about">About Me</h2>
-            <img src="images/download.png" alt="Profile image" width="200" height="100" loading="lazy">
-        </div>
+<section class="hero">
+    <img src="images/hero.jpg" alt="Osun business community">
 
-        <div class="card-image">
-            <h2>Connecting Businesses in Osun State</h2>
-            <p>The Port Harcourt Chamber of Commerce supports local enterprises, promotes innovation, 
-            and creates opportunities for business growth across Rivers State.</p>
-            <button>Join the Chamber</button>
-        </div>
-    </section>
+    <div class="hero-text">
+        <h1>Welcome to Osun Chamber</h1>
+        <p>Connecting businesses and opportunities</p>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+    </div>
+</section>
 
-    <section class="profile">
-        <h2 class="web">Home</h2>
+<!-- 3-COLUMN SECTION -->
+<section class="card-image-2">
 
-        <div class="card-image-2">
-            <div class="Events">
-                <h3>Upcoming Events</h3>
-                <p>Business networking meetup — June 15, 2024</p>
-                <p>Business workshop — July 20, 2024</p>
-                <p>Annual business awards — September 10, 2024</p>
-                <p>Chamber gala dinner — December 5, 2024</p>
-            </div>
+    <!-- EVENTS -->
+    <div class="Events">
+        <h3>Upcoming Events</h3>
+        <p>Networking Meetup — June 2026</p>
+        <p>Business Workshop — July 2026</p>
+        <p>Awards Ceremony — September 2026</p>
+    </div>
 
-            <div class="weather">
-                <h3>Current Weather</h3>
-                <div class="weather-info">
-                    <div>
-                        <p>75°F</p>
-                        <p>Partly Cloudy</p>    
-                        <p>High: 85°</p>
-                        <p>Low: 52°</p>
-                        <p>Humidity: 34%</p>
-                    </div>
-                    <img src="images/weather-icon.svg" alt="Weather icon" width="100" height="100" loading="lazy">
-                </div>    
-            </div>
+    <!-- WEATHER (NOW DYNAMIC) -->
+    <div class="weather">
+        <h3>Current Weather</h3>
+        <div id="weather-current">Loading...</div>
+    </div>
 
-            <div class="weather">
-                <h3>Weather Forecast</h3>
-                <p>Today: 90°F</p>
-                <p>Wednesday: 85°F</p>
-                <p>Thursday: 80°F</p>
-            </div>
-        </div>
-    </section>
+    <!-- FORECAST -->
+    <div class="weather">
+        <h3>3-Day Forecast</h3>
+        <div id="weather-forecast">Loading...</div>
+    </div>
 
-    <section> 
-        <h2>Business Spotlight</h2> 
-        <div class="spotlight"> 
-            <div class="business">
-                 <h3>Obafemi Awolowo Tech Solutions</h3> 
-                 <p>Business Tag Line</p> 
-                 <p><strong>Description:</strong> Innovative technology solutions for modern businesses.</p> <p><strong>Contact:</strong> info@obafemiawolowo.tech</p> <p><strong>Location:</strong> 123 Tech Avenue, Osun State</p> <a href="https://obafemiawolowo.tech" target="_blank">Visit Website</a> </div> <div class="business"> <h3>Modakeke's Farmer Association</h3> <p>Business Tag Line</p> <p><strong>Description:</strong> Connecting skilled artisans with customers across Osun State.</p> <p><strong>Contact:</strong> info@modakekesfarmerassociation.com</p> <p><strong>Location:</strong> 456 Farmia Road, Osun State</p> <a href="https://modakekesfarmerassociation.com" target="_blank">Visit Website</a> </div> <div class="business"> <h3>Osun State Artisans Guild</h3> <p>Business Tag Line</p> <p><strong>Description:</strong> Connecting skilled artisans with customers across Osun State.</p> <p><strong>Contact:</strong> info@osunstateartisansguild.com</p> <p><strong>Location:</strong> 789 Artisan Street, Osun State</p> <a href="https://osunstateartisansguild.com" target="_blank">Visit Website</a> </div> </div> </section>
+</section>
 
+<!-- SPOTLIGHT (NOW DYNAMIC) -->
+<section>
+    <h2>Business Spotlight</h2>
+    <div id="spotlights" class="spotlight"></div>
+</section>
+
+   
 </main>
     <footer>
 

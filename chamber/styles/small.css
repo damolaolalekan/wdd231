@@ -451,3 +451,42 @@ img {
 }
 
 
+
+
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #E07A5F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
