@@ -469,21 +469,29 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.7);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     width: 80%;
 }
 
+.hero-text h1 {
+    color: #ffffff;
+}
+
 .cta-button {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background: #E07A5F;
+    background: #8B3A2B;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #6f2e22;
 }
 
 .spotlight-section {
