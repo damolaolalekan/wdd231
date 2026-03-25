@@ -450,9 +450,6 @@ img {
     max-width: 100%;
 }
 
-
-
-
 .hero {
     position: relative;
     margin-bottom: 2rem;
@@ -487,6 +484,20 @@ img {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.spotlight-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.spotlight-intro {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.spotlight-action {
+    margin-top: 20px;
 }
 
 

@@ -26,9 +26,10 @@
      <link rel="stylesheet" href="styles/larger.css">
 
      <!-- JavaScript Here -->
-      <script src="scripts/course.js" defer></script>
+      <script src="scripts/courses.js" defer></script>
       <script src="scripts/navigation.js" defer></script> 
       <script src="scripts/weather.js" defer></script>
+      <script src="scripts/spotlight.js" defer></script>
 
       <link rel="icon" href="favicon.ico">
       <link rel="icon" type="image/png" href="favicon.png">
@@ -42,7 +43,7 @@
          <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="directory.html">Discover</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
@@ -52,7 +53,7 @@
     <main>
 
 <section class="hero">
-    <img src="images/hero.jpg" alt="Osun business community">
+    <img src="images/osun_state_chamber.png" alt="Business professionals networking in Osun State">
 
     <div class="hero-text">
         <h1>Welcome to Osun Chamber</h1>
@@ -86,10 +87,10 @@
 
 </section>
 
-<!-- SPOTLIGHT (NOW DYNAMIC) -->
+<!-- SPOTLIGHT SECTION -->
 <section>
     <h2>Business Spotlight</h2>
-    <div id="spotlights" class="spotlight"></div>
+    <div id="spotlights" class="grid"></div>
 </section>
 
    
@@ -103,6 +104,20 @@
     <a href="#"><img src="images/facebook.svg" alt="Facebook profile of Olalekan Damola"></a>
     <a href="#"><img src="images/twitter-x.svg" alt="Twitter profile of Olalekan Damola"></a>
 </div>
+
+<section class="spotlight-section">
+    <h2>🌟 Business Spotlight</h2>
+
+    <p class="spotlight-intro">
+        Discover some of our top-performing Gold and Silver members making an impact in Osun State.
+    </p>
+
+    <div id="spotlights" class="grid"></div>
+
+    <div class="spotlight-action">
+        <a href="directory.html" class="cta-button">View All Members</a>
+    </div>
+</section>
 
 <p>© <span id="year"></span> Olalekan Damola | WDD231</p>
 
