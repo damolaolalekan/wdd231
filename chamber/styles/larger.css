@@ -68,6 +68,8 @@ main {
     padding: 1rem 5px;
    }
 
+
+
    .card-image{
     width: 300px;
     background-color: #d9d9d9;
@@ -77,7 +79,6 @@ main {
     justify-items: center;
 
    }
-   
    h3 {
     text-align: center;
 }
@@ -89,6 +90,10 @@ main img {
     width: 100%;
     height: auto;
     align-items: center;
+}
+
+.card-image-2 {
+    display: flex;
 }
 
    .Events{
