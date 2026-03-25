@@ -95,31 +95,6 @@ main {
     gap: 2rem;
    }
 
-   .me img {
-    width: 100%;
-    height: auto;
-    text-align: center;
-   }
-
-   .me{
-    max-width: 600px;
-    text-align: center;
-    background-color: #d9d9d9;
-    margin-left: 10px;
-    padding-bottom: 5px;
-    border-radius: 6px;
-   }
-
-   .card-image{
-    max-width: 700px;
-    background-color: #d9d9d9;
-    margin: 10px;
-    height: auto;
-    text-align: center;
-    padding: 10px;
-    border-radius: 6px;
-   }
-
    h3 {
     text-align: center;
     background-color: #3D405B;
@@ -191,35 +166,7 @@ main {
 
 
    
-   .card-image button {
-    border: 1px solid #333842;
-    background-color: #cac9cd;
-    padding: 10px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    }
-
-  .credits {
-    background-color: white;
-    color: #000;
-    
-   }
-
-   #courses {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-#courses div {
-    border: 1px solid #ddd;
-    background-color: #d9d9d9;
-    padding: 10px 40px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
+   
 
 /*********** footer  ************/
 footer {
@@ -322,11 +269,6 @@ text-align:left;
 
 
 /******** directory  ************/
-
-.business-card img{
-width:100%;
-height:auto;
-}
 
 img {
     max-width: 100%;
