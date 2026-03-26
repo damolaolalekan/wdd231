@@ -79,6 +79,7 @@ main {
     justify-items: center;
 
    }
+
    h3 {
     text-align: center;
 }
@@ -92,8 +93,10 @@ main img {
     align-items: center;
 }
 
-.card-image-2 {
-    display: flex;
+.home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
 }
 
    .Events{
