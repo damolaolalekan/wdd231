@@ -194,6 +194,8 @@ img {
     .business-card img {
         width: 150px;
     }
+
+
 }
 
 /* Medium screens */
@@ -201,6 +203,53 @@ img {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Form */
+
+.join-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+
+    /* ⭐ THIS IS THE KEY FIX */
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 2px;
+}
+
+.join-form label {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+
+button {
+    border-radius: 6px;
+    padding: 1opx;
+}
+
+
+
+.membership-cards .card {
+  display: block;
+  background: #d9d9d9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* MODALS */
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+
 }
 
 /* Large screens */
@@ -209,3 +258,4 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+

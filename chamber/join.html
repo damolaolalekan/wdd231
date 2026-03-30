@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Olalekan Damola showcasing web development projects, courses, and profile information.">
+    <meta name="author" content="Olalekan Damola">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Olalekan Damola | WDD231 Course Home Page">
+    <meta property="og:description" content="A personal course home page displaying web development courses, projects, and progress.">
+    <meta property="og:image" content="https://damolaolalekan.github.io/wdd231/images/profile.jpg">
+    <meta property="og:url" content="https://damolaolalekan.github.io/wdd231/index.html">
+
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/navigation.js" defer></script> 
+    <script src="scripts/courses.js" defer></script> 
+    
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+      <link rel="icon" type="image/png" href="favicon.png">
+
+    <title>Join Us | Osun Chamber</title>     
+</head>
+<body>
+  <header>
+            <img src="images/logo.png" alt="site logo" width="512" height="512">
+        <span>Osun Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+
+         <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="join-container">
+
+      <section class="join-me">
+
+        <form method="get" action="thankyou.html" class="join-form">
+            <h2>Join the Osun Chamber of Commerce</h2>
+
+        <!-- First Name-->
+         <label>
+            First Name:
+            <input type="text" name="first-name" required
+            title="Please enter your first name"
+            autocomplete="given-name">
+         </label>
+
+        <!-- Last Name-->
+         <label>
+            Last Name
+            <input type="text" name="last-name" required
+            title="Please enter your last name"
+            autocomplete="family-name">
+         </label>
+
+        <!-- Organization Title-->
+         <label>
+            Organization Title
+            <input type="text" name="orgTitle"
+            title="At least 7 characters, letters, hyphens, spaces only"
+            autocomplete="organization-title"
+            pattern="[A-Za-z\\-\\s]{7,}">
+         </label>
+
+        <!-- Email-->
+         <label>
+            Email
+            <input type="email" name="email" required
+            title="Please enter a valid email address"
+            autocomplete="email"
+            placeholder="example@email.com">
+         </label>
+
+        <!-- Phone Number-->
+         <label>
+            Mobile Phone Number
+            <input type="tel" name="phone" required
+            title="Please enter a valid phone number"
+            autocomplete="tel">
+         </label>
+
+        <!-- Organization -->
+         <label>
+            Organization
+            <input type="text" name="organization"
+            title="Please enter your organization name"
+            autocomplete="organization">
+         </label>
+
+        <!-- Membership -->
+            <label>
+                Membership Level
+                <select name="membership">
+                    <option value="np">NP membership</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+
+            <!-- Description -->
+            <label>
+                Business Description
+                <textarea name="description" rows="4" cols="50"
+                    title="Please provide a brief description of your organization"
+                    placeholder="Tell us about your organization..."></textarea>
+            </label>
+
+            <!-- TIMESTAMP -->
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <!-- Submit Button -->
+            <input type="submit" value="Join the Chamber">
+    </form>
+
+
+<section class="membership-cards">
+
+  <h2>Membership Benefits</h2>
+
+  <div class="card">
+    <h3>NP Membership</h3>
+    <button type="button" onclick="openModal('npModal')">View Benefits</button>
+  </div>
+
+  <div class="card">
+    <h3>Bronze</h3>
+    <button type="button" onclick="openModal('bronzeModal')">View Benefits</button>
+  </div>
+
+  <div class="card">
+    <h3>Silver</h3>
+    <button type="button" onclick="openModal('silverModal')">View Benefits</button>
+  </div>
+
+  <div class="card">
+    <h3>Gold</h3>
+    <button type="button" onclick="openModal('goldModal')">View Benefits</button>
+  </div>
+
+</div>
+
+
+<!-- Modals -->
+<dialog id="npModal">
+  <h2>NP Membership</h2>
+  <p>No fee, access to community events.</p>
+  <button onclick="closeModal('npModal')">Close</button>
+</dialog>
+
+<dialog id="bronzeModal">
+  <h2>Bronze Membership</h2>
+  <p>Basic advertising and event access.</p>
+  <button onclick="closeModal('bronzeModal')">Close</button>
+</dialog>
+
+<dialog id="silverModal">
+  <h2>Silver Membership</h2>
+  <p>Includes discounts and promotions.</p>
+  <button onclick="closeModal('silverModal')">Close</button>
+</dialog>
+
+<dialog id="goldModal">
+  <h2>Gold Membership</h2>
+  <p>Premium spotlight ads and VIP events.</p>
+  <button onclick="closeModal('goldModal')">Close</button>
+</dialog>
+
+</section>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>© <span id="year"></span> Olalekan Damola | WDD231</p>
+
+<p id="lastModified"></p>
+
+</footer>   
+</body>
+</html>
