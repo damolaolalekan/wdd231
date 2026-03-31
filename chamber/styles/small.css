@@ -546,10 +546,7 @@ label {
   border-radius: 10px;
 }
 
-.membership-cards{
-  margin-top: 1rem;
-  gap: 2rem;
-}
+
 
 dialog {
   border: none;
@@ -573,11 +570,6 @@ dialog::backdrop {
   cursor: pointer;
 }
 
-.open-button {
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-}
 
 .open-button {
   padding: 10px 15px;
@@ -592,10 +584,6 @@ dialog::backdrop {
 .open-button:hover {
   background: #9c2c13;
   transform: scale(1.05);
-}
-
-button {
-    border-radius: 6px;
 }
 
 /* ANIMATION */
