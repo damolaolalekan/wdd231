@@ -1,28 +1,26 @@
-// Set timestamp
-document.querySelector("#timestamp").value = new Date().toISOString();
-
-
 // OPEN MODALS 
+const openButtons = document.querySelectorAll(".open-button");
+const closeButtons = document.querySelectorAll(".close-button");
 
-document.querySelectorAll(".membership-cards button").forEach(button => {
+
+openButtons.forEach(button => {
   button.addEventListener("click", () => {
     const modalId = button.dataset.modal;
     const modal = document.getElementById(modalId);
-
     if (modal) {
       modal.showModal();
     }
   });
 });
 
-
 // CLOSE MODALS
 
-document.querySelectorAll("dialog .close-btn").forEach(button => {
+
+closeButtons.forEach(button => {
   button.addEventListener("click", () => {
-    const dialog = button.closest("dialog");
-    if (dialog) {
-      dialog.close();
+    const modal = button.closest("dialog");
+    if (modal) {
+      modal.close();
     }
   });
 });

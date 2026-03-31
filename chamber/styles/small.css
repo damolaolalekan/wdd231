@@ -530,7 +530,6 @@ label {
 
 /* MODALS */
 .modal {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -552,6 +551,53 @@ label {
   gap: 2rem;
 }
 
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.open-button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.open-button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.open-button:hover {
+  background: #9c2c13;
+  transform: scale(1.05);
+}
+
+button {
+    border-radius: 6px;
+}
+
 /* ANIMATION */
 .membership-cards .card {
   opacity: 0;
@@ -566,17 +612,3 @@ label {
   }
 }
 
-dialog {
-  border: none;
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px;
-}
-
-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.6);
-}
-
-button {
-    border-radius: 6px;
-}
