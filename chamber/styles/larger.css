@@ -213,13 +213,13 @@ img {
 
     /* ⭐ THIS IS THE KEY FIX */
     max-width: 900px;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 2px;
 }
 
 .join-form label {
     display: block;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     color: #9c2c13;
     font-size: .9rem;
 }
@@ -228,7 +228,6 @@ button {
     border-radius: 6px;
     padding: 1opx;
 }
-
 
 
 .membership-cards .card {

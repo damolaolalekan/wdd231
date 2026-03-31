@@ -1,28 +1,30 @@
-// Timestamp
+// Set timestamp
 document.querySelector("#timestamp").value = new Date().toISOString();
 
-function closeModal(id) {
-  document.getElementById(id).close(); 
-}
 
-function openModal(id) {
-  console.log("Opening:", id);
-  document.getElementById(id).showModal();
-}
+// OPEN MODALS 
+
+document.querySelectorAll(".membership-cards button").forEach(button => {
+  button.addEventListener("click", () => {
+    const modalId = button.dataset.modal;
+    const modal = document.getElementById(modalId);
+
+    if (modal) {
+      modal.showModal();
+    }
+  });
+});
 
 
-const params = new URLSearchParams(window.location.search);
+// CLOSE MODALS
 
-if (results) {
-  const params = new URLSearchParams(window.location.search);
+document.querySelectorAll("dialog .close-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const dialog = button.closest("dialog");
+    if (dialog) {
+      dialog.close();
+    }
+  });
+});
 
-  results.innerHTML = `
 
-  <p><strong>First Name:</strong> ${params.get("first-name")}</p>
-  <p><strong>Last Name:</strong> ${params.get("last-name")}</p>
-  <p><strong>Email:</strong> ${params.get("email")}</p>
-  <p><strong>Phone:</strong> ${params.get("phone")}</p>
-  <p><strong>Business:</strong> ${params.get("organization")}</p>
-  <p><strong>Date:</strong> ${params.get("timestamp")}</p>
-`;
-}

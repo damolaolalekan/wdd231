@@ -15,6 +15,11 @@
     <script src="scripts/join.js" defer></script>
     <script src="scripts/navigation.js" defer></script> 
     <script src="scripts/courses.js" defer></script> 
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -95,7 +100,7 @@
         <!-- Organization -->
          <label>
             Organization
-            <input type="text" name="organization"
+            <input type="text" name="organization" required
             title="Please enter your organization name"
             autocomplete="organization">
          </label>
@@ -129,26 +134,26 @@
 
 <section class="membership-cards">
 
-  <h2>Membership Benefits</h2>
+  <h1>Membership Benefits</h1>
 
   <div class="card">
     <h3>NP Membership</h3>
-    <button type="button" onclick="openModal('npModal')">View Benefits</button>
+    <button type="button" data-modal="npModal">View Benefits</button>
   </div>
 
   <div class="card">
     <h3>Bronze</h3>
-    <button type="button" onclick="openModal('bronzeModal')">View Benefits</button>
+    <button type="button" data-modal="bronzeModal">View Benefits</button>
   </div>
 
   <div class="card">
     <h3>Silver</h3>
-    <button type="button" onclick="openModal('silverModal')">View Benefits</button>
+    <button type="button" data-modal="silverModal">View Benefits</button>
   </div>
 
   <div class="card">
     <h3>Gold</h3>
-    <button type="button" onclick="openModal('goldModal')">View Benefits</button>
+    <button type="button" data-modal="goldModal">View Benefits</button>
   </div>
 
 </div>
@@ -158,25 +163,25 @@
 <dialog id="npModal">
   <h2>NP Membership</h2>
   <p>No fee, access to community events.</p>
-  <button onclick="closeModal('npModal')">Close</button>
+  <button class="close-btn">Close</button>
 </dialog>
 
 <dialog id="bronzeModal">
   <h2>Bronze Membership</h2>
   <p>Basic advertising and event access.</p>
-  <button onclick="closeModal('bronzeModal')">Close</button>
+  <button class="close-btn">Close</button>
 </dialog>
 
 <dialog id="silverModal">
   <h2>Silver Membership</h2>
   <p>Includes discounts and promotions.</p>
-  <button onclick="closeModal('silverModal')">Close</button>
+  <button class="close-btn">Close</button>
 </dialog>
 
 <dialog id="goldModal">
   <h2>Gold Membership</h2>
   <p>Premium spotlight ads and VIP events.</p>
-  <button onclick="closeModal('goldModal')">Close</button>
+  <button class="close-btn">Close</button>
 </dialog>
 
 </section>
