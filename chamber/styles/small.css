@@ -521,13 +521,6 @@ label {
   gap: 10px;
 }
 
-.membership-cards .card {
-  background: #d9d9d9;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-}
-
 /* MODALS */
 .modal {
   position: fixed;
@@ -591,6 +584,10 @@ dialog::backdrop {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 1s forwards;
+  background: #d9d9d9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 @keyframes fadeUp {
