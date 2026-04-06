@@ -1,0 +1,57 @@
+@media only screen and (min-width: 768px) {
+body {
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+    
+    
+    header, main, nav, footer {
+        max-width: 100%;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+    }
+
+    header img {
+        grid-row: 1 / 2;
+    }
+
+    header span {
+    grid-column: 2 / 3;
+}
+
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: block;
+        margin: 4px;
+
+    }
+
+    .navigation ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    nav li {
+        white-space: nowrap;
+    } 
+
+    .navigation a {
+        padding: 5px;
+    }
+}
