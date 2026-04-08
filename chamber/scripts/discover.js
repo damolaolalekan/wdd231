@@ -10,18 +10,20 @@ places.forEach((place, index) => {
   card.style.gridArea = `card${index + 1}`;
 
 
-
   // Assign grid area based on index
   card.innerHTML = `
-    <h2>${place.name}</h2>
+
+  <h2>${place.name}</h2>
+
     <figure>
       <img src="${place.image}" alt="Image of ${place.name} in Osogbo" loading="lazy" width="300" height="200">
     </figure>
-    <address>${place.address}</address>
-    <p>${place.description}</p>
-    <button>Learn More</button>
-  `;
 
+      <p>${place.description}</p>
+      <address>${place.address}</address>
+      
+  <button>Learn More</button>
+`;
   container.appendChild(card);
 });
 

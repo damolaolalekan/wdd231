@@ -165,9 +165,6 @@ main {
     }
 
 
-   
-   
-
 /*********** footer  ************/
 footer {
     background-color: #d9d9d9;
@@ -540,7 +537,6 @@ label {
 }
 
 
-
 dialog {
   border: none;
   border-radius: 10px;
@@ -580,7 +576,7 @@ dialog::backdrop {
 }
 
 /* ANIMATION */
-.membership-cards .card {
+.membership-cards .card1 {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 1s forwards;
@@ -614,18 +610,59 @@ dialog::backdrop {
 }
 
 .card {
-  background: #f5f5f5;
+  display: grid;
+  grid-template-areas:
+    "title "
+    "image"
+    "desc"
+    "button"
+    "address";
+  gap: 0.8rem;
+  background: #f9f9f9;
   padding: 15px;
   border-radius: 10px;
+  border: 1px solid #ccc;
 }
+
 
 .card img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0.4rem 0;
+  grid-area: desc;
+}
+
+.card address {
+  grid-area: address;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.card button {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
 }
 
 #visit-message {
-  margin: 1rem 0;
+  margin: 1rem;
   font-weight: bold;
 }
 
+.card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: 0.3s ease;
+  }

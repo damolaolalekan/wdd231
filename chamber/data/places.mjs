@@ -38,7 +38,7 @@ export const places = [
   {
     name: "Osun River",
     address: "Flowing through Osogbo, Osun State, Nigeria",
-    image: "images/river.png",
+    image: "images/river.jpg",
     description: "A sacred river tied to Yoruba mythology."
   },
   {
