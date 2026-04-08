@@ -16,7 +16,7 @@ places.forEach((place, index) => {
   <h2>${place.name}</h2>
 
     <figure>
-      <img src="${place.image}" alt="Image of ${place.name} in Osogbo" loading="lazy" width="300" height="200">
+      <img src="${place.image}" alt="Image of ${place.name} in Osogbo" loading="lazy" width="500" height="300">
     </figure>
 
       <p>${place.description}</p>
