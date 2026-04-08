@@ -1,0 +1,48 @@
+@media (min-width: 641px) {
+
+  .discover-grid {
+    display: grid;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+    gap: 1rem;
+  }
+
+  .card {
+    display: grid;
+    grid-template-areas:
+      "title button"
+      "image button"
+      "desc button"
+      "address button";
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  
+  .card h2 {
+    grid-area: title;
+  }
+
+  .card figure {
+    grid-area: image;
+    margin: 0;
+  }
+
+  .card p {
+    grid-area: desc;
+  }
+
+  .card address {
+    grid-area: address;
+  }
+
+  .card button {
+    grid-area: button;
+    height: 90%;
+    width: 80%;
+    margin: auto;
+  }
+}

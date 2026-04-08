@@ -626,12 +626,14 @@ dialog::backdrop {
 
 
 .card img {
+  grid-area: image;
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
 .card h2 {
+  grid-area: title;
   margin-bottom: 0.5rem;
 }
 
@@ -661,8 +663,3 @@ dialog::backdrop {
   font-weight: bold;
 }
 
-.card img:hover {
-    transform: scale(1.05);
-    filter: brightness(1.1);
-    transition: 0.3s ease;
-  }
