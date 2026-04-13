@@ -1,0 +1,21 @@
+{
+  "courses": [
+    {"title":"HTML Basics","category":"Web Development","level":"Beginner","duration":"3 weeks"},
+    {"title":"CSS Fundamentals","category":"Web Development","level":"Beginner","duration":"3 weeks"},
+    {"title":"JavaScript Essentials","category":"Web Development","level":"Intermediate","duration":"4 weeks"},
+    {"title":"Responsive Design","category":"Web Development","level":"Intermediate","duration":"2 weeks"},
+    {"title":"Flexbox & Grid","category":"Web Development","level":"Intermediate","duration":"2 weeks"},
+
+    {"title":"Python Basics","category":"Programming","level":"Beginner","duration":"4 weeks"},
+    {"title":"Java Programming","category":"Programming","level":"Intermediate","duration":"5 weeks"},
+    {"title":"C# Fundamentals","category":"Programming","level":"Beginner","duration":"4 weeks"},
+    {"title":"Data Structures","category":"Programming","level":"Advanced","duration":"6 weeks"},
+    {"title":"Algorithms","category":"Programming","level":"Advanced","duration":"6 weeks"},
+
+    {"title":"Git & GitHub","category":"Tools","level":"Beginner","duration":"1 week"},
+    {"title":"VS Code Setup","category":"Tools","level":"Beginner","duration":"1 week"},
+    {"title":"API Integration","category":"Tools","level":"Intermediate","duration":"3 weeks"},
+    {"title":"Debugging Tools","category":"Tools","level":"Intermediate","duration":"2 weeks"},
+    {"title":"Deployment","category":"Tools","level":"Advanced","duration":"2 weeks"}
+  ]
+}

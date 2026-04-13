@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Contact TechLearn Hub for support, questions, and tech learning resources.">
+<meta name="author" content="Olalekan Damola">
+
+<title>Contact | TechLearn Hub</title>
+
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/large.css">
+
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/contact.js" defer></script>
+<script src="scripts/join.js"></script>
+<script src="scripts/courses.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="images/niagara.png" alt="TechLearn Hub logo" width="100" height="100">
+        <span>TechLearn Hub</span>
+    </div>
+
+    <button id="ham-btn" class="hamburger"></button>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li> <a href="courses.html" class="bt">Explore Courses</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contact-container">
+
+<section class="contact-section">
+
+<!-- CONTACT FORM -->
+<form method="get" action="thankyou.html" class="contact-form">
+    <h2>Contact TechLearn Hub</h2>
+
+    <label>
+        Name:
+        <input type="text" name="name" required>
+    </label>
+
+    <label>
+        Email:
+        <input type="email" name="email" required placeholder="example@email.com">
+    </label>
+
+    <label>
+        Subject:
+        <input type="text" name="subject" required>
+    </label>
+
+    <label>
+        Message:
+        <textarea name="message" rows="4" placeholder="How can we help you?"></textarea>
+    </label>
+
+    <input type="submit" value="Send Message">
+</form>
+
+<!-- HELP / SUPPORT CARDS -->
+<section class="support-cards">
+
+<h2>Need Help?</h2>
+
+<div class="card">
+  <h3>Web Development</h3>
+  <button class="open-button" data-modal="webModal">Learn More</button>
+</div>
+
+<div class="card">
+  <h3>Programming</h3>
+  <button class="open-button" data-modal="progModal">Learn More</button>
+</div>
+
+<div class="card">
+  <h3>Tools & Resources</h3>
+  <button class="open-button" data-modal="toolsModal">Learn More</button>
+</div>
+
+<!-- MODALS -->
+<dialog id="webModal">
+  <button class="close-button">❌</button>
+  <h2>Web Development</h2>
+  <p>Learn HTML, CSS, and JavaScript to build modern websites.</p>
+</dialog>
+
+<dialog id="progModal">
+  <button class="close-button">❌</button>
+  <h2>Programming</h2>
+  <p>Explore programming languages like Python and Java.</p>
+</dialog>
+
+<dialog id="toolsModal">
+  <button class="close-button">❌</button>
+  <h2>Tools & Resources</h2>
+  <p>Discover tools like GitHub, VS Code, and more.</p>
+</dialog>
+
+</section>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h2>TechLearn Hub</h2>
+      <p>Your gateway to learning tech skills.</p>
+    </div>
+
+    <!-- NAV LINKS -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="techhub.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-social">
+      <h3>Connect</h3>
+      <a href="https://github.com/YOURUSERNAME">
+        <img src="images/github.svg" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/YOURPROFILE">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+      </a>
+      <a href="#">
+        <img src="images/facebook.svg" alt="Facebook">
+      </a>
+      <a href="#">
+        <img src="images/twitter-x.svg" alt="Twitter">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> TechLearn Hub | Olalekan Damola</p>
+    <p id="lastModified"></p>
+  </div>
+
+</footer>
+</body>
+
+</html>
