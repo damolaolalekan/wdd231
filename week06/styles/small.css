@@ -431,6 +431,10 @@ dialog::backdrop {
   color: #eee;
 }
 
+#webModal h2, #progModal h2,#toolsModal h2 {
+  color: black;
+}
+
 
 
 
