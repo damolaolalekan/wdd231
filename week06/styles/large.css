@@ -34,6 +34,22 @@ header {
   }
 
 
+  /***** Build connect *****/
+
+  .lbc-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+
+  /****** Upcoming Events ****/
+  /* DESKTOP */
+  .events-auth {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+
   
 
   /* Contact Section */
@@ -41,12 +57,13 @@ header {
   .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 30px 60px;
-    margin: 60px;
+    gap: 20px;
     align-items: center;
-    align-content: center;
+    margin: 100px auto;
+  
   }
+
+
 
   /* FOOTER */
 

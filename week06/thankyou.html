@@ -3,8 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You</title>
 
+<!-- SEO META -->
+<meta name="description" content="Thank you for contacting TechLearn Hub. We have received your message.">
+<meta name="author" content="Olalekan Damola">
+
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="Thank You | TechLearn Hub">
+<meta property="og:description" content="Your message has been received successfully.">
+<meta property="og:image" content="images/hero-bg.jpg">
+<meta property="og:url" content="https://yourdomain.com/thankyou.html">
+<meta property="og:type" content="website">
+
+<!-- TITLE -->
+<title>Thank You | TechLearn Hub</title>
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles/normalize.css">
 <link rel="stylesheet" href="styles/small.css">
 <link rel="stylesheet" href="styles/large.css">
 
@@ -13,8 +32,27 @@
 
 <body>
 
-<h1>Thank You!</h1>
-<p>Your message has been received.</p>
+<header>
+  <a href="techhub.html" class="logo">
+  <img src="images/niagara.png" alt="TechLearn Hub logo" width="50">
+  <span>TechLearn Hub</span>
+</a>
+
+  <nav class="navigation">
+    <ul>
+      <li><a href="techhub.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="thankyou">
+
+  <div class="thankyou-card">
+    <h1>Thank You!</h1>
+    <p>Your message has been received.</p>
+
 
 <div class="result">
   <p><strong>Name:</strong> <span id="name"></span></p>
@@ -23,7 +61,26 @@
   <p><strong>Message:</strong> <span id="message"></span></p>
 </div>
 
-<a href="techhub.html">Back to Home</a>
+<div class="thankyou-actions">
+      <a href="techhub.html" class="btn-primary">Home</a>
+      <a href="courses.html" class="btn-secondary">Courses</a>
+</div>
+</div>
+
+
+</main>
+
+<footer class="site-footer">
+
+  <p>© <span id="year"></span> TechLearn Hub | Olalekan Damola</p>
+  <p id="lastModified"></p>
+
+  <div class="footer-social">
+    <img src="images/github.svg" alt="GitHub">
+    <img src="images/linkedin.svg" alt="LinkedIn">
+  </div>
+
+</footer>
 
 </body>
 </html>

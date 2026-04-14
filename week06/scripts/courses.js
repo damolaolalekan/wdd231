@@ -1,5 +1,4 @@
 
-
 const container = document.querySelector("#course-container");
 
 async function getCourses() {
