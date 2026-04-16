@@ -15,7 +15,7 @@ async function getCourses() {
 function displayCourses(courses) {
   container.innerHTML = courses.map(course => `
     <div class="course-card">
-      <h3>${course.title}</h3>
+      <h2>${course.title}</h2>
       <p><strong>Category:</strong> ${course.category}</p>
       <p><strong>Level:</strong> ${course.level}</p>
       <p><strong>Duration:</strong> ${course.duration}</p>
