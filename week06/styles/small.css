@@ -77,12 +77,16 @@ header {
 }
 
 .bt {
-  background: #749c39;
+  background: #B3543C;
   padding: 10px 20px;
   color: white;
   text-decoration: none;
   border-radius: 5px;
 
+}
+
+.bt:hover {
+  background: #8C3E2B;
 }
 
 
@@ -335,7 +339,7 @@ header {
 }
 
 .auth-links a {
-  color: #1F3A5F;
+  color: #00BFA6;
   text-decoration: none;
 }
 
