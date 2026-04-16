@@ -90,7 +90,7 @@ header {
   display: flex;
   align-items: center;
   font-weight: bold;
-  text-decoration: none;   /* remove underline */
+  text-decoration: none;   
   color: white;       
 }
 
@@ -100,7 +100,7 @@ header {
 }
 
 .logo:hover {
-  opacity: 0.8;            /* nice hover effect */
+  opacity: 0.8;           
 }
 
 
@@ -462,17 +462,16 @@ dialog::backdrop {
   display: grid;
   gap: 15px;
   padding: 15px;
-  grid-template-columns: 1fr; /* fallback */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-  
   /* CARD */
 .course-card {
   width: 100%;
-  max-width: 100%;
+  min-width: 0;
   background: white;
   border-radius: 10px;
-  padding: 20px;
+  text-align: center;
   border-left: 5px solid #00BFA6;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
