@@ -1,19 +1,20 @@
-const hamBtn = document.querySelector("#ham-btn");
-const navBar = document.querySelector("#nav-bar");
+export function initNavigation() {
+  const hamBtn = document.querySelector("#ham-btn");
+  const navBar = document.querySelector("#nav-bar");
 
 
-if (hamBtn && navBar) {
-hamBtn.addEventListener("click", () => {
+  if (hamBtn && navBar) {
+  hamBtn.addEventListener("click", () => {
     navBar.classList.toggle("show");
     hamBtn.classList.toggle("show");
 });
 }
 
-const links = document.querySelectorAll(".navigation a");
+    const links = document.querySelectorAll(".navigation a");
 
-links.forEach(link => {
-  if (link.href === window.location.href) {
-    link.classList.add("active");
+    links.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add("active");
   }
 });
 
@@ -21,3 +22,4 @@ links.forEach(link => {
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent =
   "Last Modified: " + document.lastModified;
+}
