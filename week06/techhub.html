@@ -76,7 +76,7 @@
 
     <!-- WEB DEVELOPMENT -->
     <div class="featured-card">
-      <img src="images/web-development.jpg" alt="Web Development" loading="lazy">
+      <img src="images/web-development.jpg" alt="Web Development" width=" 20" height="20" loading="lazy">
       <h3>Web Development</h3>
       <p>Learn HTML, CSS, and JavaScript to build modern websites.</p>
       <a href="courses.html">Explore</a>
@@ -84,7 +84,7 @@
 
     <!-- PROGRAMMING -->
     <div class="featured-card">
-      <img src="images/programming.jpg" alt="Programming" loading="lazy">
+      <img src="images/programming.jpg" alt="Programming" width=" 20" height="20" loading="lazy">
       <h3>Programming</h3>
       <p>Master languages like Python, Java, and C#.</p>
       <a href="courses.html">Explore</a>
@@ -92,7 +92,7 @@
 
     <!-- TOOLS -->
     <div class="featured-card">
-      <img src="images/github.png" alt="Tools" loading="lazy">
+      <img src="images/github.png" alt="Tools" width=" 20" height="20" loading="lazy">
       <h3>Tools</h3>
       <p>Work with GitHub, APIs, and developer tools.</p>
       <a href="courses.html">Explore</a>
@@ -100,7 +100,7 @@
 
     <!-- TECH HUB -->
     <div class="featured-card">
-      <img src="images/techhub.webp" alt="Tech Hub" loading="lazy">
+      <img src="images/techhub.webp" alt="Tech Hub" width=" 20" height="20" loading="lazy">
       <h3>TechHub</h3>
       <p>Your central place for learning, resources, and growth.</p>
       <a href="contact.html">Join Us</a>
@@ -168,6 +168,8 @@
 
   </div>
 
+
+
   <!-- RIGHT: AUTH SYSTEM -->
   <div class="auth-side">
 
@@ -175,8 +177,11 @@
     <form id="loginForm" class="auth-form">
       <h3>Login</h3>
 
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" placeholder="Email" required>
+
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" placeholder="Password" required>
 
       <button type="submit">Login</button>
 
@@ -190,9 +195,14 @@
     <form id="signupForm" class="auth-form hidden">
       <h3>Create Account</h3>
 
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
+      <label for="signup-name">Full Name</label>
+      <input type="text" id="signup-name" placeholder="Full Name" required>
+
+      <label for="signup-email">Email</label>
+      <input type="email" id="signup-email" placeholder="Email" required>
+
+      <label for="signup-password">Password</label>
+      <input type="password" id="signup-password" placeholder="Password" required>
 
       <button type="submit">Sign Up</button>
 
@@ -205,7 +215,8 @@
     <form id="forgotForm" class="auth-form hidden">
       <h3>Reset Password</h3>
 
-      <input type="email" placeholder="Enter your email" required>
+      <label for="forgot-email">Email</label>
+      <input type="email" id="forgot-email" placeholder="Enter your email" required>
 
       <button type="submit">Send Reset Link</button>
 
