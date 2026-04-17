@@ -135,6 +135,11 @@ header {
   border-radius: 5px;
 }
 
+.hero-content {
+  background-color: ;
+  color: #383838;
+}
+
 
 /********** Featured SECTION *************/
 
@@ -320,6 +325,11 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.auth-form {
+  background-color: #474747;
+  color: #E3E3E3;
 }
 
 .auth-form input {
