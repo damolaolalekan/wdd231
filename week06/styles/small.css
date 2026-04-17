@@ -117,7 +117,14 @@ header {
 }
 
 .hero h1 {
+  background-color: #424242;
+  color: #B3B3B3;
   font-size: 2.5rem;
+}
+
+.hero p {
+  background-color: #3D3D3D;
+  color: #E3E3E3;
 }
 
 .btn {
