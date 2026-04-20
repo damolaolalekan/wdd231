@@ -21,7 +21,8 @@ closeBtns.forEach(btn => {
 const form = document.querySelector(".contact-form");
 
 // SAVE DATA TO LOCAL STORAGE
-form.addEventListener("submit", () => {
+if(form)
+form.addEventListener("submit", (e) => {
   const formData = {
     name: form.name.value,
     email: form.email.value,
@@ -29,8 +30,10 @@ form.addEventListener("submit", () => {
     message: form.message.value
   };
 
+
   localStorage.setItem("contactData", JSON.stringify(formData));
 });
+
 
 // LOAD SAVED DATA (AUTO-FILL)
 window.addEventListener("DOMContentLoaded", () => {

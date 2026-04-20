@@ -1,4 +1,4 @@
-export async function loadQuote() {
+async function loadQuote() {
   try {
     const res = await fetch("https://api.quotable.io/random");
     const data = await res.json();

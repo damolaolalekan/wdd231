@@ -3,6 +3,9 @@ export function initForms() {
   const signupForm = document.getElementById("signupForm");
   const forgotForm = document.getElementById("forgotForm");
 
+
+  if (!loginForm || !signupForm || !forgotForm) return;
+  
   document.getElementById("showSignup").onclick = () => {
     loginForm.classList.add("hidden");
     signupForm.classList.remove("hidden");
